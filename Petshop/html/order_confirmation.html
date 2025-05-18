@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furever Friends - Order Confirmation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <header class="bg-white shadow-md py-4">
+        <div class="container mx-auto flex justify-between items-center px-4">
+            <a href="index.html" class="text-2xl font-semibold text-gray-800">Furever Friends</a>
+            <div class="flex items-center gap-4">
+                <input type="text" placeholder="Search..." class="border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                <nav class="flex gap-4">
+                    <a href="index.html" class="text-gray-700 hover:text-blue-500 transition-colors">Home</a>
+                    <a href="shop.html" class="text-gray-700 hover:text-blue-500 transition-colors">Shop</a>
+                    <a href="help.html" class="text-gray-700 hover:text-blue-500 transition-colors">Help</a>
+                </nav>
+                <a href="cart.html" class="text-gray-700 hover:text-blue-500 transition-colors">Your Cart</a>
+                <a href="login.html" class="text-gray-700 hover:text-blue-500 transition-colors">Login</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto py-6 px-4">
+        <div class="bg-white rounded-md shadow-md p-6 text-center">
+            <h2 class="text-3xl font-semibold text-green-600 mb-4">Thank You for Your Order!</h2>
+            <p class="text-lg text-gray-700 mb-6">Your order has been placed successfully. Your order number is <span class="font-semibold text-blue-500">#1234567890</span>.</p>
+            <p class="text-gray-700 mb-6">A confirmation email has been sent to your email address.</p>
+            <button onclick="window.location.href='index.html'" class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-6 rounded-md transition-colors">Continue Shopping</button>
+        </div>
+    </main>
+
+    <footer class="bg-gray-200 py-6">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 px-4">
+            <div>
+                <h4 class="font-semibold text-gray-700 mb-2">Address:</h4>
+                <p class="text-gray-600">1 Esperanza, Quezon City,<br>1118 Metro Manila</p>
+            </div>
+            <div>
+                <h4 class="font-semibold text-gray-700 mb-2">About & Customer Support</h4>
+                <ul class="text-gray-600 space-y-1">
+                    <li><a href="about.html" class="hover:text-blue-500 transition-colors">About Us</a></li>
+                    <li><a href="contact.html" class="hover:text-blue-500 transition-colors">Contact Us</a></li>
+                    <li><a href="faqs.html" class="hover:text-blue-500 transition-colors">FAQs</a></li>
+                    <li><a href="shipping.html" class="hover:text-blue-500 transition-colors">Shipping & Returns</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-semibold text-gray-700 mb-2">Quick Links</h4>
+                <ul class="text-gray-600 space-y-1">
+                    <li><a href="shop.html" class="hover:text-blue-500 transition-colors">Shop by Category</a></li>
+                    <li><a href="order_tracking.html" class="hover:text-blue-500 transition-colors">Order Tracking</a></li>
+                    <li><a href="gift_cards.html" class="hover:text-blue-500 transition-colors">Gift Cards & Vouchers</a></li>
+                    <li><a href="blog.html" class="hover:text-blue-500 transition-colors">Blog</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-semibold text-gray-700 mb-2">Payment & Security</h4>
+                <ul class="text-gray-600 space-y-1">
+                    <li><a href="payment_methods.html" class="hover:text-blue-500 transition-colors">Payment Methods</a></li>
+                    <li><a href="security.html" class="hover:text-blue-500 transition-colors">Secure Shopping Guarantee</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="text-center mt-4 text-gray-600">
+            &copy; 2024 Furever Friends. All rights reserved. | <a href="privacy.html" class="hover:text-blue-500 transition-colors">Privacy Policy</a> | <a href="terms.html" class="hover:text-blue-500 transition-colors">Terms of Service</a>
+        </div>
+    </footer>
+</body>
+</html>

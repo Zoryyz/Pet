@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furever Friends Pet Shop</title>
+    <link rel="stylesheet" href="../css/Category.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <script src="../javascript/Category.js"></script>
+
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <img src="" alt="Logo">
+                </a>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search...">
+                </div>
+                <div class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="shop.html">Shop</a>
+                    <a href="#">Help</a>
+                </div>
+                <div class="cart-login"> 
+                    <a class="cart-button" href="cart.html">
+                        <i class="fa-solid fa-cart-shopping"></i> Your Cart
+                        <a>
+                    <a href="#" class="login-btn">Login</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="main-content">
+            <aside class="sidebar">
+                <div class="filter-section">
+                    <h3>Categories</h3>
+                </div>
+                
+                <div class="filter-section">
+                    <h3>Pet Type:</h3>
+                    <select>
+                        <option>Dog</option>
+                        <option>Cat</option>
+                        <option>Bird</option>
+                        <option>Fish</option>
+                        <option>Small Pet</option>
+                    </select>
+                </div>
+
+                <div class="filter-section">
+                    <h3>Brands</h3>
+                    <div class="brand-options">
+                        <label><input type="checkbox"> Royal Canin</label>
+                        <label><input type="checkbox"> Purina</label>
+                        <label><input type="checkbox"> Hill's Science Diet</label>
+                        <label><input type="checkbox"> Blue Buffalo</label>
+                        <label><input type="checkbox"> Whiskas</label>
+                        <label><input type="checkbox"> Iams</label>
+                        <label><input type="checkbox"> Tetra</label>
+                        <label><input type="checkbox"> KONG</label>
+                        <label><input type="checkbox"> Kaytee</label>
+                        <label><input type="checkbox"> Zignature</label>
+                    </div>
+                    <span class="view-more">View more...</span>
+                </div>
+
+                <div class="filter-section price-filter">
+                    <h3>Price</h3>
+                    <div class="price-inputs">
+                        <input type="text" placeholder="Min">
+                        <span>—</span>
+                        <input type="text" placeholder="Max">
+                        <button class="apply-btn">▶</button>
+                    </div>
+                </div>
+
+                <div class="filter-section">
+                    <h3>Rating</h3>
+                    <div class="star-filter-option">
+                        <a href="#" class="star-rating-link">
+                            <div class="star-rating">★★★★★</div>
+                        </a>
+                        <span>And Up</span>
+                    </div>
+                    <div class="star-filter-option">
+                        <a href="#" class="star-rating-link">
+                            <div class="star-rating">★★★★☆</div>
+                        </a>
+                        <span>And Up</span>
+                    </div>
+                    <div class="star-filter-option">
+                        <a href="#" class="star-rating-link">
+                            <div class="star-rating">★★★☆☆</div>
+                        </a>
+                        <span>And Up</span>
+                    </div>
+                    <div class="star-filter-option">
+                        <a href="#" class="star-rating-link">
+                            <div class="star-rating">★★☆☆☆</div>
+                        </a>
+                        <span>And Up</span>
+                    </div>
+                    <div class="star-filter-option">
+                        <a href="#" class="star-rating-link">
+                            <div class="star-rating">★☆☆☆☆</div>
+                        </a>
+                        <span>And Up</span>
+                    </div>
+                </div>
+
+                <div class="filter-section">
+                    <h3>Availability</h3>
+                    <div class="brand-options">
+                        <label><input type="checkbox"> In Stock</label>
+                        <label><input type="checkbox"> Out of Stock</label>
+                        <label><input type="checkbox"> Pre Order</label>
+                        <label><input type="checkbox"> Limited Stock</label>
+                        <label><input type="checkbox"> Backorder</label>
+                    </div>
+                </div>
+
+                <div class="filter-section">
+                    <h3>Special Offers</h3>
+                    <div class="brand-options">
+                        <label><input type="checkbox"> Discounted Items</label>
+                        <label><input type="checkbox"> Buy One Get One</label>
+                        <label><input type="checkbox"> Clearance Sale</label>
+                        <label><input type="checkbox"> Bundle Deals</label>
+                        <label><input type="checkbox"> Flash Sale</label>
+                        <label><input type="checkbox"> Free Shipping</label>
+                        <label><input type="checkbox"> Limited Time Offer</label>
+                        <label><input type="checkbox"> New Customer Discount</label>
+                        <label><input type="checkbox"> Loyalty Rewards</label>
+                        <label><input type="checkbox"> Coupon Deals</label>
+                    </div>
+                    <span class="view-more">View more...</span>
+                </div>
+            </aside>
+
+            <div class="product-grid">
+                <div class="product-header">
+                    <div class="product-count">
+                        <h2>Item name</h2>
+                        <p>1000 items found for "item name"</p>
+                    </div>
+                    <div class="sort-by">
+                        <span>Sort by:</span>
+                        <select>
+                            <option>Best Match</option>
+                            <option>Price: Low to High</option>
+                            <option>Price: High to Low</option>
+                            <option>Rating</option>
+                            <option>Newest</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="products">
+                    <!-- Product 1 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="/api/placeholder/150/150" alt="Product Image">
+                        </div>
+                        <div class="product-info">
+                            <h3>Product name</h3>
+                            <div class="product-price">$300</div>
+                            <div class="product-meta">
+                                <span>100 Sold</span>
+                                <a href="#" class="product-stars">★★★★★</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 2 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="/api/placeholder/150/150" alt="Product Image">
+                        </div>
+                        <div class="product-info">
+                            <h3>Product name</h3>
+                            <div class="product-price">$300</div>
+                            <div class="product-meta">
+                                <span>100 Sold</span>
+                                <div class="product-stars">★★★★★</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 3 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="/api/placeholder/150/150" alt="Product Image">
+                        </div>
+                        <div class="product-info">
+                            <h3>Product name</h3>
+                            <div class="product-price">$300</div>
+                            <div class="product-meta">
+                                <span>100 Sold</span>
+                                <div class="product-stars">★★★★★</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 4 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="/api/placeholder/150/150" alt="Product Image">
+                        </div>
+                        <div class="product-info">
+                            <h3>Product name</h3>
+                            <div class="product-price">$300</div>
+                            <div class="product-meta">
+                                <span>100 Sold</span>
+                                <div class="product-stars">★★★★★</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 5 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="/api/placeholder/150/150" alt="Product Image">
+                        </div>
+                        <div class="product-info">
+                            <h3>Product name</h3>
+                            <div class="product-price">$300</div>
+                            <div class="product-meta">
+                                <span>100 Sold</span>
+                                <div class="product-stars">★★★★★</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 6 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="/api/placeholder/150/150" alt="Product Image">
+                        </div>
+                        <div class="product-info">
+                            <h3>Product name</h3>
+                            <div class="product-price">$300</div>
+                            <div class="product-meta">
+                                <span>100 Sold</span>
+                                <div class="product-stars">★★★★★</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 7 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="/api/placeholder/150/150" alt="Product Image">
+                        </div>
+                        <div class="product-info">
+                            <h3>Product name</h3>
+                            <div class="product-price">$300</div>
+                            <div class="product-meta">
+                                <span>100 Sold</span>
+                                <div class="product-stars">★★★★★</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 8 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="/api/placeholder/150/150" alt="Product Image">
+                        </div>
+                        <div class="product-info">
+                            <h3>Product name</h3>
+                            <div class="product-price">$300</div>
+                            <div class="product-meta">
+                                <span>100 Sold</span>
+                                <div class="product-stars">★★★★★</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 9 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="/api/placeholder/150/150" alt="Product Image">
+                        </div>
+                        <div class="product-info">
+                            <h3>Product name</h3>
+                            <div class="product-price">$300</div>
+                            <div class="product-meta">
+                                <span>100 Sold</span>
+                                <div class="product-stars">★★★★★</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 10 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="/api/placeholder/150/150" alt="Product Image">
+                        </div>
+                        <div class="product-info">
+                            <h3>Product name</h3>
+                            <div class="product-price">$300</div>
+                            <div class="product-meta">
+                                <span>100 Sold</span>
+                                <div class="product-stars">★★★★★</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 11 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="/api/placeholder/150/150" alt="Product Image">
+                        </div>
+                        <div class="product-info">
+                            <h3>Product name</h3>
+                            <div class="product-price">$300</div>
+                            <div class="product-meta">
+                                <span>100 Sold</span>
+                                <div class="product-stars">★★★★★</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 12 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="/api/placeholder/150/150" alt="Product Image">
+                        </div>
+                        <div class="product-info">
+                            <h3>Product name</h3>
+                            <div class="product-price">$300</div>
+                            <div class="product-meta">
+                                <span>100 Sold</span>
+                                <div class="product-stars">★★★★★</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pagination">
+                    <div class="pagination-btn">⟨</div>
+                    <div class="pagination-btn active">1</div>
+                    <div class="pagination-btn">2</div>
+                    <div class="pagination-btn">3</div>
+                    <div class="pagination-ellipsis">...</div>
+                    <div class="pagination-btn">50</div>
+                    <div class="pagination-btn">⟩</div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="/api/placeholder/100/40" alt="Logo">
+                    </div>
+                    <div class="footer-address">
+                        <p>Address:<br>1 Esperanza, Quezon City, 1118 Metro Manila</p>
+                    </div>
+                    <div class="social-icons">
+                        <div class="social-icon">
+                            <span>IG</span>
+                        </div>
+                        <div class="social-icon">
+                            <span>FB</span>
+                        </div>
+                        <div class="social-icon">
+                            <span>TW</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h3>About & Customer Support</h3>
+                    <div class="footer-links">
+                        <a href="#">About Us</a>
+                        <a href="#">Contact Us</a>
+                        <a href="#">FAQs</a>
+                        <a href="#">Shipping & Returns</a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <div class="footer-links">
+                        <a href="#">Shop by Category</a>
+                        <a href="#">Order Tracking</a>
+                        <a href="#">Gift Cards & Vouchers</a>
+                        <a href="#">Blog</a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Payment & Security</h3>
+                    <div class="footer-links">
+                        <a href="#">Payment Methods</a>
+                        <a href="#">Secure Shopping Guarantee</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p>© 2024 Furever Friends. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

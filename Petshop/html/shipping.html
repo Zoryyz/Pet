@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furever Friends - Checkout: Shipping Details</title>
+    <link rel="stylesheet" href="../css/shipping.css">
+</head>
+<body>
+    <script src="../javascript/shipping.js"></script>
+    <header>
+        <div class="logo-container">
+            <a href="#" class="logo-link">
+                <div class="logo">FurFriends</div>
+            </a>
+        </div>
+        <div class="search-container">
+            <input type="text" class="search-box" placeholder="Search...">
+        </div>
+        <div class="nav-links">
+            <a href="#">Home</a> | <a href="#">Shop</a> | <a href="#">Help</a>
+        </div>
+        <div class="cart-login">
+            <button class="cart-btn" id="cart-btn">Your Cart (2)</button>
+            <a href="#" class="login-link" id="login-link">Login</a>
+        </div>
+    </header>
+    
+    <div class="checkout-steps">
+        <div class="step" id="step-1">1. Shopping Cart</div>
+        <div class="step active" id="step-2">2. Shipping Details</div>
+        <div class="step" id="step-3">3. Payment Options</div>
+    </div>
+    
+    <div class="main-container">
+        <div class="shipping-form">
+            <h2>Shipping Details</h2>
+            
+            <form id="shipping-form">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <input type="text" id="first-name" placeholder="First Name" required>
+                        <div class="error-message" id="first-name-error">Please enter your first name</div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="last-name" placeholder="Last Name" required>
+                        <div class="error-message" id="last-name-error">Please enter your last name</div>
+                    </div>
+                    <div class="form-group full-width">
+                        <input type="email" id="email" placeholder="Email Address" required>
+                        <div class="error-message" id="email-error">Please enter a valid email address</div>
+                    </div>
+                    <div class="form-group full-width">
+                        <input type="text" id="address" placeholder="Address" required>
+                        <div class="error-message" id="address-error">Please enter your address</div>
+                    </div>
+                    <div class="form-group">
+                        <select id="province" required>
+                            <option value="">Province</option>
+                            <option value="AB">Alberta</option>
+                            <option value="BC">British Columbia</option>
+                            <option value="MB">Manitoba</option>
+                            <option value="NB">New Brunswick</option>
+                            <option value="NL">Newfoundland and Labrador</option>
+                            <option value="NS">Nova Scotia</option>
+                            <option value="ON">Ontario</option>
+                            <option value="PE">Prince Edward Island</option>
+                            <option value="QC">Quebec</option>
+                            <option value="SK">Saskatchewan</option>
+                        </select>
+                        <div class="error-message" id="province-error">Please select a province</div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="city" placeholder="City" required>
+                        <div class="error-message" id="city-error">Please enter your city</div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="postal-code" placeholder="Zip/Postal Code" required>
+                        <div class="error-message" id="postal-code-error">Please enter a valid postal code</div>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="phone" placeholder="Phone Number" required>
+                        <div class="error-message" id="phone-error">Please enter a valid phone number</div>
+                    </div>
+                </div>
+                
+                <div class="shipping-options">
+                    <div class="shipping-option selected" id="free-shipping">
+                        <input type="radio" name="shipping" id="free" value="free" checked>
+                        <div class="shipping-option-info">
+                            <div class="shipping-option-title">Free Shipping</div>
+                            <div class="shipping-option-desc">Between 2 - 5 working days</div>
+                        </div>
+                    </div>
+                    <div class="shipping-option" id="nextday-shipping">
+                        <input type="radio" name="shipping" id="nextday" value="nextday">
+                        <div class="shipping-option-info">
+                            <div class="shipping-option-title">Next Day Shipping - $20</div>
+                            <div class="shipping-option-desc">24 hours from checkout</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <button type="submit" class="continue-btn" id="continue-btn">Continue to Payment</button>
+            </form>
+        </div>
+        
+        <div class="summary">
+            <h2>Summary</h2>
+            
+            <div class="product-item">
+                <div class="product-image">
+                    <span>🐱</span>
+                </div>
+                <div class="product-details">
+                    <div class="product-name">Premium Cat Food (10kg)</div>
+                    <div class="product-price">$45</div>
+                </div>
+            </div>
+            
+            <div class="product-item">
+                <div class="product-image">
+                    <span>🦴</span>
+                </div>
+                <div class="product-details">
+                    <div class="product-name">Dog Toy Bundle</div>
+                    <div class="product-price">$25</div>
+                </div>
+            </div>
+            
+            <div class="coupon-code">
+                <input type="text" id="coupon-input" placeholder="Enter Coupon Code">
+                <button id="apply-coupon">Apply</button>
+            </div>
+            
+            <div class="order-summary">
+                <div class="summary-row">
+                    <div>Subtotal</div>
+                    <div id="subtotal">$70</div>
+                </div>
+                <div class="summary-row" id="discount-row">
+                    <div>Discount</div>
+                    <div id="discount-amount">-$10</div>
+                </div>
+                <div class="summary-row">
+                    <div>Shipping</div>
+                    <div id="shipping-cost">Free</div>
+                </div>
+                <div class="summary-row total">
+                    <div>Total</div>
+                    <div id="total-amount">$70</div>
+                </div>
+            </div>
+            
+            <div class="checkout-buttons">
+                <button class="checkout-btn" id="checkout-btn">Checkout (2)</button>
+                <button class="cancel-btn" id="cancel-btn">Cancel</button>
+            </div>
+        </div>
+    </div>
+    
+    <div id="login-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" id="close-login">&times;</span>
+            <h2>Login to Your Account</h2>
+            <form id="login-form">
+                <div class="form-group full-width" style="margin-bottom: 15px;">
+                    <input type="email" placeholder="Email Address" required>
+                </div>
+                <div class="form-group full-width" style="margin-bottom: 15px;">
+                    <input type="password" placeholder="Password" required>
+                </div>
+                <button type="submit" class="continue-btn" style="width: 100%;">Login</button>
+                <p style="text-align: center; margin-top: 20px;">
+                    Don't have an account? <a href="#" style="color: #333;">Sign up</a>
+                </p>
+            </form>
+        </div>
+    </div>
+    
+    <div id="notification" class="notification"></div>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="footer-logo">FurFriends</div>
+                <p>Address:<br>
+                1 Esperanza, Quezon City,<br>
+                1118 Metro Manila</p>
+                <div class="social-icons">
+                    <a href="#">📷</a>
+                    <a href="#">📘</a>
+                    <a href="#">🐦</a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>About & Customer Support</h3>
+                <ul class="footer-links">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Shipping & Returns</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Shop by Category</a></li>
+                    <li><a href="#">Order Tracking</a></li>
+                    <li><a href="#">Gift Cards & Vouchers</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Payment & Security</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Payment Methods</a></li>
+                    <li><a href="#">Secure Shopping Guarantee</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <span>© 2025 Furever Friends. All rights reserved.</span>
+            <div>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

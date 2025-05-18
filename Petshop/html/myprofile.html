@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furever Friends - My Profile</title>
+    <link rel="stylesheet" href="../css/profile.css">
+</head>
+<script src="../js/profile.js"></script>
+<body>
+    <header>
+        <div class="logo-container">
+            <a href="#" class="logo-link">
+                <div class="logo">Logo</div>
+            </a>
+        </div>
+        <div class="search-container">
+            <input type="text" class="search-box" placeholder="Search...">
+        </div>
+        <div class="nav-links">
+            <a href="#">Home</a> | <a href="#">Shop</a> | <a href="#">Help</a>
+        </div>
+        <div class="cart-login">
+            <button class="cart-btn">Your Cart</button>
+            <a href="#" class="login-link">Login</a>
+        </div>
+    </header>
+    
+    <div class="main-container">
+        <div class="sidebar">
+            <div class="profile-info">
+                <div class="profile-pic">
+                    <span>👤</span>
+                </div>
+                <div class="account-name">Account Name</div>
+                <a href="#" class="edit-profile">Edit Profile</a>
+            </div>
+            
+            <div class="nav-title">My Account</div>
+            <ul class="sidebar-nav">
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Banks & Cards</a></li>
+                <li><a href="#">Addresses</a></li>
+                <li><a href="#">Change Password</a></li>
+                <li><a href="#">Privacy Settings</a></li>
+                <li><a href="#">Notifications</a></li>
+                <li><a href="#">Settings</a></li>
+                <li><a href="#">My Purchase</a></li>
+                <li><a href="#">My Vouchers</a></li>
+                <li><a href="#">My Wishlist</a></li>
+            </ul>
+        </div>
+        
+        <div class="content">
+            <div style="display: flex; justify-content: space-between;">
+                <div class="profile-form">
+                    <h2 class="profile-header">My Profile</h2>
+                    
+                    <div class="form-row">
+                        <div class="form-label">Username</div>
+                        <div class="form-input">
+                            <input type="text" value="Username" disabled>
+                            <div class="note">Username can only be changed once</div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-label">Name</div>
+                        <div class="form-input">
+                            <input type="text" placeholder="Name">
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-label">Email</div>
+                        <div class="form-input">
+                            sam***@gmail.com
+                            <a href="#" class="change-link">Change</a>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-label">Phone</div>
+                        <div class="form-input">
+                            09559622489
+                            <a href="#" class="change-link">Change</a>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-label">Gender</div>
+                        <div class="form-input">
+                            <div class="radio-group">
+                                <div class="radio-option">
+                                    <input type="radio" id="male" name="gender">
+                                    <label for="male">Male</label>
+                                </div>
+                                <div class="radio-option">
+                                    <input type="radio" id="female" name="gender">
+                                    <label for="female">Female</label>
+                                </div>
+                                <div class="radio-option">
+                                    <input type="radio" id="other" name="gender">
+                                    <label for="other">Other</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-label">Date of Birth</div>
+                        <div class="form-input">
+                            <div class="date-selects">
+                                <select id="dob-day">
+                                    <option>Day</option>
+                                </select>
+                                <select id="dob-month">
+                                    <option>Month</option>
+                                </select>
+                                <select id="dob-year">
+                                    <option>Year</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <button class="save-btn">Save</button>
+                </div>
+                
+                <div class="profile-image-section">
+                    <div class="profile-image-container">
+                        <img src="/api/placeholder/60/60" alt="User">
+                    </div>
+                    <button class="select-image-btn">Select Image</button>
+                    <div class="image-info">
+                        File size: maximum 5 MB<br>
+                        File extension: JPEG, PNG
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="footer-logo">Logo</div>
+                <p>Address:<br>
+                1 Esperanza, Quezon City,<br>
+                1118 Metro Manila</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>About & Customer Support</h3>
+                <ul class="footer-links">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Shipping & Returns</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Shop by Category</a></li>
+                    <li><a href="#">Order Tracking</a></li>
+                    <li><a href="#">Gift Cards & Vouchers</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Payment & Security</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Payment Methods</a></li>
+                    <li><a href="#">Secure Shopping Guarantee</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <span>© 2024 Furever Friends. All rights reserved.</span>
+            <div>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

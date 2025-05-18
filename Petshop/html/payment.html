@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Page</title>
+    <link rel="stylesheet" href="../css/payment.css">
+</head>
+<body>
+    <script src="/javascript/payment.js"></script>
+    <header>
+        <div class="container header-content">
+            <a href="index.html" class="logo">
+                <img src="/image/logo.jpg" alt="Company Logo" class="logo-img">
+            </a>
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Home</a> | 
+                <a href="#">Shop</a> | 
+                <a href="#">Help</a>
+            </div>
+            <button class="cart-btn">Your Cart</button>
+            <a href="#">Login</a>
+        </div>
+    </header>
+    
+    <div class="container">
+        <div class="checkout-steps">
+            <div class="step">1.Shopping Cart</div>
+            <div class="step">2.Shipping Details</div>
+            <div class="step active">3.Payment Options</div>
+        </div>
+        
+        <div class="checkout-content">
+            <div class="payment-methods">
+                <h2>Payment Method</h2>
+                <div class="payment-option selected" id="credit-card">
+                    <div class="payment-header">
+                        <input type="radio" name="payment" id="cc-radio" checked>
+                        <label for="cc-radio"><strong>Credit Card</strong></label>
+                    </div>
+                    <div class="payment-details">
+                        Lorem ipsum dolor sit amet et delectus accommodate his consul.
+                    </div>
+                    <div class="credit-card-form">
+                        <input type="text" placeholder="0000 0000 0000 0000">
+                        <div class="cc-row">
+                            <input type="text" placeholder="MM/YY">
+                            <div style="position: relative;">
+                                <input type="text" placeholder="CVC">
+                                <span class="cvc-info" title="The 3-digit security code on the back of your card">i</span>
+                            </div>
+                        </div>
+                        <input type="text" placeholder="Card Holder Name">
+                    </div>
+                </div>
+                
+                <div class="payment-option" id="paypal">
+                    <div class="payment-header">
+                        <input type="radio" name="payment" id="paypal-radio">
+                        <label for="paypal-radio"><strong>Paypal</strong></label>
+                    </div>
+                    <div class="payment-details">
+                        Lorem ipsum dolor sit amet et delectus accommodate his consul copiosae legendos at vix.
+                    </div>
+                </div>
+                
+                <div class="payment-option" id="g-cash">
+                    <div class="payment-header">
+                        <input type="radio" name="payment" id="gcash-radio">
+                        <label for="gcash-radio"><strong>G-cash</strong></label>
+                    </div>
+                    <div class="payment-details">
+                        Lorem ipsum dolor sit amet et delectus accommodate his consul copiosae legendos at vix.
+                    </div>
+                </div>
+                
+                <div class="payment-option" id="cod">
+                    <div class="payment-header">
+                        <input type="radio" name="payment" id="cod-radio">
+                        <label for="cod-radio"><strong>Cash on Delivery</strong></label>
+                    </div>
+                    <div class="payment-details">
+                        Lorem ipsum dolor sit amet et delectus accommodate his consul copiosae legendos at vix.
+                    </div>
+                </div>
+            </div>
+            
+            <div class="summary">
+                <h2>Summary</h2>
+                <div class="summary-box">
+                    <div class="product-item">
+                        <div class="product-image">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                                <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                                <polyline points="21 15 16 10 5 21"></polyline>
+                            </svg>
+                        </div>
+                        <div class="product-details">
+                            <div class="product-name">Product Name</div>
+                            <div class="product-price">$300</div>
+                        </div>
+                    </div>
+                    
+                    <div class="product-item">
+                        <div class="product-image">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                                <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                                <polyline points="21 15 16 10 5 21"></polyline>
+                            </svg>
+                        </div>
+                        <div class="product-details">
+                            <div class="product-name">Product Name</div>
+                            <div class="product-price">$300</div>
+                        </div>
+                    </div>
+                    
+                    <div class="coupon-section">
+                        <input type="text" placeholder="Enter Coupon Code">
+                        <button>Apply</button>
+                    </div>
+                    
+                    <div class="summary-row">
+                        <span>Subtotal</span>
+                        <span>$600</span>
+                    </div>
+                    
+                    <div class="summary-row">
+                        <span>Shipping</span>
+                        <span>Free</span>
+                    </div>
+                    
+                    <div class="summary-row total-row">
+                        <span>Total</span>
+                        <span>$300</span>
+                    </div>
+                    
+                    <div class="checkout-buttons">
+                        <button class="pay-btn">Pay now</button>
+                        <button class="cancel-btn">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-column">
+                <a href="index.html" class="logo">
+                    <img src="/api/placeholder/70/40" alt="Company Logo" class="logo-img">
+                </a>
+                <div class="address">
+                    <p><strong>Address:</strong></p>
+                    <p>1 Esperanza, Quezon City,<br>1118 Metro Manila</p>
+                </div>
+                <div class="social-links">
+                    <a href="#" class="social-icon">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer-column">
+                <h3>About & Customer Support</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Shipping & Returns</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Shop by Category</a></li>
+                    <li><a href="#">Order Tracking</a></li>
+                    <li><a href="#">Gift Cards & Vouchers</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Payment & Security</h3>
+                <ul>
+                    <li><a href="#">Payment Methods</a></li>
+                    <li><a href="#">Secure Shopping Guarantee</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="container footer-bottom">
+            <div>© 2024 Forever Friends. All rights reserved.</div>
+            <div>
+                <a href="#">Privacy Policy</a> |
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

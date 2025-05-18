@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ Page</title>
+    <link rel="stylesheet" href="../css/FQAS.css">
+</head>
+<script src="../javascript/fqas.js"></script>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <img src="" alt="Company Logo">
+                </a>
+                <div class="search-bar">
+                    <form action="#" method="get">
+                        <input type="text" placeholder="Search...">
+                    </form>
+                </div>
+                <div class="nav-links">
+                    <a href="index.html">Home</a> | 
+                    <a href="#">Shop</a> | 
+                    <a href="helpcenter.html">Help</a>
+                </div>
+                <div class="cart-login">
+                    <a href="#" class="cart-btn">
+                        🛒 Your Cart
+                    </a>
+                    <a href="#" class="login-btn" onclick="openLoginModal(); return false;">Login</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <h1>Freaquently Asked Questions</h1>
+
+        <div class="faq-container">
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    Question
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at vix ad putent delectus delicata usu. Vidit dissentiet eos cu eum an brute copiosae hendrerit. Eos erant dolorum an. Per facer affert ut. Mei iisque mentitum moderatius cu. Sit munere facilis accusam eu dicat falli consulatu at vis. Te facilisis mnesarchum qui posse omnium
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    Question
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at vix ad putent delectus delicata usu. Vidit dissentiet eos cu eum an brute copiosae hendrerit.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    Question
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at vix ad putent delectus delicata usu. Vidit dissentiet eos cu eum an brute copiosae hendrerit.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    Question
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at vix ad putent delectus delicata usu. Vidit dissentiet eos cu eum an brute copiosae hendrerit.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    Question
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at vix ad putent delectus delicata usu. Vidit dissentiet eos cu eum an brute copiosae hendrerit.
+                </div>
+            </div>
+
+            <div class="contact-options">
+                <a href="mailto:info@example.com" class="contact-option">
+                    <div class="contact-icon">✉️</div>
+                    <div class="contact-title">Email us</div>
+                    <p>Have questions or need assistance? Reach out to us via email. We're here to help!</p>
+                </a>
+                <a href="tel:+1234567890" class="contact-option">
+                    <div class="contact-icon">📞</div>
+                    <div class="contact-title">Contact us</div>
+                    <p>Need help or have inquiries? Call us anytime. We're here for you.</p>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                    <img src="" alt="Company Logo">
+                </div>
+                    <p>Address:</p>
+                    <p>1 Esperanza, Quezon City,</p>
+                    <p>1118 Metro Manila</p>
+                </div>
+                <div class="footer-col">
+                    <h3>About & Customer Support</h3>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Shipping & Returns</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">Shop by Category</a></li>
+                        <li><a href="#">Order Tracking</a></li>
+                        <li><a href="#">Gift Cards & Vouchers</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Payment & Security</h3>
+                    <ul>
+                        <li><a href="#">Payment Methods</a></li>
+                        <li><a href="#">Secure Shopping Guarantee</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <div>© 2024 Furever Friends. All rights reserved.</div>
+                <div>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeLoginModal()">&times;</span>
+            <h2>Login to Your Account</h2>
+            <form id="loginForm" onsubmit="handleLogin(event)">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="form-options">
+                    <div class="remember-me">
+                        <input type="checkbox" id="remember" name="remember">
+                        <label for="remember">Remember me</label>
+                    </div>
+                    <a href="#" class="forgot-password">Forgot password?</a>
+                </div>
+                <button type="submit" class="login-submit-btn">Login</button>
+                <div class="register-link">
+                    Don't have an account? <a href="#" onclick="openRegisterModal(); return false;">Register here</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

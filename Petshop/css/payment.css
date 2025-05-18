@@ -1,0 +1,350 @@
+* {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        
+        body {
+            background-color: #f1f1f1;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        
+        header {
+            background-color: white;
+            padding: 15px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .logo {
+            width: auto;
+            height: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            color: #333;
+            cursor: pointer;
+        }
+        
+        .logo-img {
+            max-height: 40px;
+            transition: opacity 0.2s ease;
+        }
+        
+        .logo:hover .logo-img {
+            opacity: 0.8;
+        }
+        
+        .search-bar {
+            flex-grow: 1;
+            margin: 0 20px;
+            max-width: 350px;
+        }
+        
+        .search-bar input {
+            width: 100%;
+            padding: 8px 15px;
+            border-radius: 50px;
+            border: 1px solid #ccc;
+            outline: none;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 15px;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+        }
+        
+        .cart-btn {
+            background-color: #333;
+            color: white;
+            padding: 8px 15px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        
+        .checkout-steps {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 15px;
+        }
+        
+        .step {
+            padding: 10px 20px;
+            position: relative;
+        }
+        
+        .step.active {
+            font-weight: bold;
+            border-bottom: 3px solid #333;
+        }
+        
+        .checkout-content {
+            display: flex;
+            gap: 30px;
+            margin-top: 30px;
+        }
+        
+        .payment-methods {
+            flex: 2;
+        }
+        
+        .summary {
+            flex: 1;
+        }
+        
+        .payment-option {
+            margin-bottom: 15px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: white;
+        }
+        
+        .payment-option.selected {
+            border-color: #333;
+            background-color: #f9f9f9;
+        }
+        
+        .payment-header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+        
+        .payment-header input[type="radio"] {
+            transform: scale(1.2);
+        }
+        
+        .payment-details {
+            margin-top: 10px;
+            padding-left: 25px;
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        .credit-card-form {
+            margin-top: 15px;
+        }
+        
+        .credit-card-form input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+        }
+        
+        .cc-row {
+            display: flex;
+            gap: 10px;
+        }
+        
+        .cc-row input {
+            flex: 1;
+        }
+        
+        .cvc-info {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            text-align: center;
+            line-height: 20px;
+            background-color: #333;
+            color: white;
+            border-radius: 50%;
+            font-size: 0.8rem;
+            margin-left: 5px;
+            cursor: pointer;
+        }
+        
+        .summary-box {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 20px;
+        }
+        
+        .summary-title {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+        
+        .product-item {
+            display: flex;
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .product-image {
+            width: 60px;
+            height: 60px;
+            background-color: #eee;
+            margin-right: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .product-details {
+            flex-grow: 1;
+        }
+        
+        .product-name {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        
+        .coupon-section {
+            margin: 20px 0;
+            display: flex;
+            gap: 10px;
+        }
+        
+        .coupon-section input {
+            flex-grow: 1;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+        }
+        
+        .coupon-section button {
+            padding: 10px 15px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        
+        .summary-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+        
+        .total-row {
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin-top: 20px;
+            padding-top: 15px;
+            border-top: 1px solid #ddd;
+        }
+        
+        .checkout-buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        
+        .checkout-buttons button {
+            padding: 12px 20px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        
+        .pay-btn {
+            background-color: #333;
+            color: white;
+            flex-grow: 1;
+            margin-right: 10px;
+        }
+        
+        .cancel-btn {
+            background-color: white;
+            border: 1px solid #ddd !important;
+        }
+        
+        footer {
+            margin-top: 50px;
+            padding: 30px 0;
+            background-color: white;
+            border-top: 1px solid #ddd;
+        }
+        
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .footer-column {
+            flex: 1;
+        }
+        
+        .footer-column h3 {
+            margin-bottom: 15px;
+            font-size: 1rem;
+        }
+        
+        .footer-column ul {
+            list-style: none;
+        }
+        
+        .footer-column ul li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-column ul li a {
+            text-decoration: none;
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        .address {
+            font-size: 0.9rem;
+            color: #666;
+            line-height: 1.5;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 15px;
+        }
+        
+        .social-icon {
+            width: 30px;
+            height: 30px;
+            background-color: #eee;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .footer-bottom {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.8rem;
+            color: #888;
+        }
+        
+        .footer-bottom a {
+            color: #888;
+            text-decoration: none;
+        }

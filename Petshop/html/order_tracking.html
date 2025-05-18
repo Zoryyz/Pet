@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furever Friends - Order Tracking</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <header class="bg-white shadow-md py-4">
+        <div class="container mx-auto flex justify-between items-center px-4">
+            <a href="index.html" class="text-2xl font-semibold text-gray-800">Furever Friends</a>
+            <div class="flex items-center gap-4">
+                <input type="text" placeholder="Search..." class="border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                <nav class="flex gap-4">
+                    <a href="index.html" class="text-gray-700 hover:text-blue-500 transition-colors">Home</a>
+                    <a href="shop.html" class="text-gray-700 hover:text-blue-500 transition-colors">Shop</a>
+                    <a href="help.html" class="text-gray-700 hover:text-blue-500 transition-colors">Help</a>
+                </nav>
+                <a href="cart.html" class="text-gray-700 hover:text-blue-500 transition-colors">Your Cart</a>
+                <a href="login.html" class="text-gray-700 hover:text-blue-500 transition-colors">Login</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto py-6 px-4">
+        <div class="bg-white rounded-md shadow-md p-6">
+            <h1 class="text-3xl font-semibold text-gray-800 mb-6">Order Tracking</h1>
+
+            <div class="mb-4">
+                <label for="order-id" class="block text-gray-700 text-sm font-bold mb-2">Order ID:</label>
+                <input type="text" id="order-id" placeholder="Enter your order ID" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+            </div>
+
+            <div class="mb-6">
+                <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Email:</label>
+                <input type="email" id="email" placeholder="Enter your email address" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+            </div>
+
+            <button onclick="trackOrder()" class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-md transition-colors mb-6">Track Order</button>
+
+            <div id="order-status" class="hidden">
+                <h2 class="text-2xl font-semibold text-gray-700 mb-4">Order Status</h2>
+                <div id="tracking-details" class="border rounded-md p-4 space-y-2">
+                    <p class="text-gray-700"><span class="font-semibold">Order ID:</span> <span id="order-id-display"></span></p>
+                    <p class="text-gray-700"><span class="font-semibold">Current Status:</span> <span id="order-status-text"></span></p>
+                    <p class="text-gray-700"><span class="font-semibold">Estimated Delivery Date:</span> <span id="delivery-date"></span></p>
+                    <p class="text-gray-700"><span class="font-semibold">Shipping Carrier:</span> <span id="carrier"></span></p>
+                    <p class="text-gray-700"><span class="font-semibold">Tracking Number:</span> <span id="tracking-number"></span></p>
+                    </div>
+            </div>
+
+            <div id="error-message" class="hidden text-red-500 mt-4">
+                An error occurred. Please check your order ID and email and try again.
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-200 py-6">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 px-4">
+            <div>
+                <h4 class="font-semibold text-gray-700 mb-2">Address:</h4>
+                <p class="text-gray-600">1 Esperanza, Quezon City,<br>1118 Metro Manila</p>
+            </div>
+            <div>
+                <h4 class="font-semibold text-gray-700 mb-2">About & Customer Support</h4>
+                <ul class="text-gray-600 space-y-1">
+                    <li><a href="about.html" class="hover:text-blue-500 transition-colors">About Us</a></li>
+                    <li><a href="contact.html" class="hover:text-blue-500 transition-colors">Contact Us</a></li>
+                    <li><a href="faqs.html" class="hover:text-blue-500 transition-colors">FAQs</a></li>
+                    <li><a href="shipping.html" class="hover:text-blue-500 transition-colors">Shipping & Returns</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-semibold text-gray-700 mb-2">Quick Links</h4>
+                <ul class="text-gray-600 space-y-1">
+                    <li><a href="shop.html" class="hover:text-blue-500 transition-colors">Shop by Category</a></li>
+                    <li><a href="order_tracking.html" class="hover:text-blue-500 transition-colors">Order Tracking</a></li>
+                    <li><a href="gift_cards.html" class="hover:text-blue-500 transition-colors">Gift Cards & Vouchers</a></li>
+                    <li><a href="blog.html" class="hover:text-blue-500 transition-colors">Blog</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-semibold text-gray-700 mb-2">Payment & Security</h4>
+                <ul class="text-gray-600 space-y-1">
+                    <li><a href="payment_methods.html" class="hover:text-blue-500 transition-colors">Payment Methods</a></li>
+                    <li><a href="security.html" class="hover:text-blue-500 transition-colors">Secure Shopping Guarantee</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="text-center mt-4 text-gray-600">
+            &copy; 2024 Furever Friends. All rights reserved. | <a href="privacy.html" class="hover:text-blue-500 transition-colors">Privacy Policy</a> | <a href="terms.html" class="hover:text-blue-500 transition-colors">Terms of Service</a>
+        </div>
+    </footer>
+
+    <script>
+        function trackOrder() {
+            const orderId = document.getElementById('order-id').value;
+            const email = document.getElementById('email').value;
+            const orderStatusDiv = document.getElementById('order-status');
+            const errorMessageDiv = document.getElementById('error-message');
+
+            // Simulate order tracking data (replace with actual API call)
+            const trackingData = {
+                '1234567890': {
+                    email: 'john.doe@example.com',
+                    status: 'Shipped',
+                    deliveryDate: 'May 10, 2024',
+                    carrier: 'FedEx',
+                    trackingNumber: '1234567890ABCDEF',
+                },
+                '9876543210': {
+                    email: 'jane.smith@example.com',
+                    status: 'Out for Delivery',
+                    deliveryDate: 'May 8, 2024',
+                    carrier: 'UPS',
+                    trackingNumber: '0987654321ZYXWVU',
+                },
+            };
+
+            const order = trackingData[orderId];
+
+            if (order && order.email === email) {
+                orderStatusDiv.classList.remove('hidden');
+                errorMessageDiv.classList.add('hidden');
+
+                document.getElementById('order-id-display').textContent = orderId;
+                document.getElementById('order-status-text').textContent = order.status;
+                document.getElementById('delivery-date').textContent = order.deliveryDate;
+                document.getElementById('carrier').textContent = order.carrier;
+                document.getElementById('tracking-number').textContent = order.trackingNumber;
+                // Update other fields as necessary
+
+            } else {
+                orderStatusDiv.classList.add('hidden');
+                errorMessageDiv.classList.remove('hidden');
+            }
+        }
+    </script>
+</body>
+</html>

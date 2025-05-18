@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furever Friends Help Center</title>
+    <link rel="stylesheet" href="../css/help.css">
+</head>
+<body>
+    <script src="../js/help.js"></script>
+    <header>
+        <div class="logo-container">
+            <a href="index.html" class="logo-link">
+                <div class="logo">Logo</div>
+            </a>
+        </div>
+        <div class="search-container">
+            <input type="text" id="header-search" class="search-box" placeholder="Search...">
+        </div>
+        <div class="nav-links">
+            <a href="#">Home</a> | <a href="#">Shop</a> | <a href="#">Help</a>
+        </div>
+        <div class="cart-login">
+            <button class="cart-btn" id="cart-button">Your Cart (0)</button>
+            <a href="#" class="login-link" id="login-button">Login</a>
+        </div>
+    </header>
+    
+    <div class="breadcrumb">
+        <a href="#">Home</a> &gt; Help Center
+    </div>
+    
+    <div class="main-content">
+        <div class="help-header">
+            <h1>Welcome to the Furever Friends Help Center</h1>
+            <p>Find answers, support, and resources for your furry companions.</p>
+        </div>
+        
+        <div class="search-help">
+            <input type="text" id="help-search" placeholder="Search for topics, questions ...">
+            <button id="help-search-btn">🔍</button>
+        </div>
+        
+        <div class="content-section">
+            <div class="faq-section">
+                <h2>Frequently Asked Questions</h2>
+                <ul class="faq-list" id="faq-list">
+                    <li class="faq-item">
+                        <div class="faq-question">Order Tracking FAQ</div>
+                        <div class="faq-answer">
+                            <p>Track your order by entering your order number and email address on our tracking page. Orders typically process within 1-2 business days and shipping takes 3-7 days depending on your location.</p>
+                            <p>International orders may take 10-20 business days to arrive. You'll receive tracking information via email once your order ships.</p>
+                        </div>
+                    </li>
+                    <li class="faq-item">
+                        <div class="faq-question">Money Back Guarantee</div>
+                        <div class="faq-answer">
+                            <p>We offer a 30-day money-back guarantee on all our products. If you're not completely satisfied with your purchase, return it within 30 days for a full refund.</p>
+                            <p>Items must be unused and in their original packaging. Please note that shipping costs are non-refundable.</p>
+                        </div>
+                    </li>
+                    <li class="faq-item">
+                        <div class="faq-question">How do I cancel my order?</div>
+                        <div class="faq-answer">
+                            <p>You can cancel your order within 1 hour of placing it by logging into your account and visiting the "Order History" section.</p>
+                            <p>For orders that have already begun processing, please contact our customer service team at support@fureverfriends.com or use the chat feature for assistance.</p>
+                        </div>
+                    </li>
+                    <li class="faq-item">
+                        <div class="faq-question">Why is my order cancelled due to failed delivery?</div>
+                        <div class="faq-answer">
+                            <p>Orders can be cancelled due to failed delivery for several reasons:</p>
+                            <ul>
+                                <li>Incorrect or incomplete shipping address</li>
+                                <li>No one available to receive the package after multiple delivery attempts</li>
+                                <li>Package was refused at delivery</li>
+                                <li>Shipping carrier couldn't access the delivery location</li>
+                            </ul>
+                            <p>If your order was cancelled for this reason, please contact us to arrange redelivery or refund.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="cases-section">
+                <h2>My Support Cases</h2>
+                <a href="#" class="cases-link" id="view-cases">View your existing support cases</a>
+                <a href="#" class="cases-link" id="create-case">Create a new support case</a>
+                
+                <div class="case-form" id="case-form">
+                    <h3>Create Support Case</h3>
+                    <form id="support-form">
+                        <label for="case-subject">Subject:</label>
+                        <input type="text" id="case-subject" required>
+                        
+                        <label for="case-type">Type:</label>
+                        <select id="case-type">
+                            <option value="order">Order Issue</option>
+                            <option value="product">Product Question</option>
+                            <option value="return">Return/Refund</option>
+                            <option value="other">Other</option>
+                        </select>
+                        
+                        <label for="case-description">Description:</label>
+                        <textarea id="case-description" rows="5" required></textarea>
+                        
+                        <button type="submit">Submit Case</button>
+                    </form>
+                </div>
+            </div>
+            
+
+        </div>
+    </div>
+    
+    <footer>
+      <div class="footer-container">
+            <div class="footer-columns">
+                <div class="footer-column">
+                    <h3>Address:</h3>
+                    <p>1 Esperanza, Quezon City, <br>1118 Metro Manila</p>
+                    <div class="social-icons">
+                    <a href="https://www.instagram.com/" target="_blank" class="social-btn"><i class="fa-brands fa-instagram fa-lg"></i></a>
+                    <a href="https://www.facebook.com/" target="_blank" class="social-btn"><i class="fa-brands fa-facebook fa-lg"></i> </a>
+                    <a href="https://www.x.com/" target="_blank" class="social-btn"><i class="fa-brands fa-x-twitter fa-lg"></i></a>
+                </div>
+                </div>
+            
+            <div class="footer-section">
+                <h3>About & Customer Support</h3>
+                <ul class="footer-links">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Shipping & Returns</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Shop by Category</a></li>
+                    <li><a href="#">Order Tracking</a></li>
+                    <li><a href="#">Gift Cards & Vouchers</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Payment & Security</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Payment Methods</a></li>
+                    <li><a href="#">Secure Shopping Guarantee</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <span>© 2024 Furever Friends. All rights reserved.</span>
+            <div>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+    
+    </body>
+    </html>
+       
